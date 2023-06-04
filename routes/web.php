@@ -5,6 +5,7 @@ use App\Http\Controllers\jabatanController;
 use App\Http\Controllers\pegawaiController;
 use App\Http\Controllers\tugasController;
 use App\Http\Controllers\perusahaanController;
+use App\Http\Controllers\userrController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,16 @@ Route::get('/', function () {
 });
 
 Route::get('/jabatan',[jabatanController::class,'index']);
+
 Route::get('/pegawai',[pegawaiController::class,'index']);
+Route::get('/pegawai-add',[pegawaiController::class,'create']);
+Route::post('/pegawai',[pegawaiController::class,'store']);
+Route::get('/pegawai-edit/{id}',[pegawaiController::class,'edit']);
+Route::put('/pegawai/{id}',[pegawaiController::class, 'update']);
+Route::delete('/pegawai/{id}',[pegawaiController::class,'destroy']);
+
 Route::get('/tugas',[tugasController::class,'index']);
+
 Route::get('/perusahaan',[perusahaanController::class,'index']);
+
+Route::get('/user',[userrController::class,'index']);
