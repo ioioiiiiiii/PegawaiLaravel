@@ -30,7 +30,7 @@ class pegawai extends Model
     {
         return $this->hasOne(userr::class,'id','id_pegawai');
     }
-
+    
     public function tugas()
     {
         return $this->belongsToMany(tugas::class,'tugas_pegawai','id_pegawai','id_tugas');
