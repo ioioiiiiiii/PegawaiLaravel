@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\pegawai;
 use App\Models\jabatan;
-use App\Models\perusahaan;
 
+use App\Models\userr;
+use App\Models\perusahaan;
 class pegawaiController extends Controller
 {
     public function index()

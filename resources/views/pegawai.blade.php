@@ -1,6 +1,3 @@
-@section('content')
-@include('navbar')
-<h1>Halaman Daftar Pegawai</h1>
 @extends('layouts.app')
 
 @section('content')
@@ -8,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header bg bg-dark text-white">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
                     <div class="my-3">
@@ -55,10 +52,7 @@
         @endforeach
     </tbody>
 </table>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 </div>
 @endsection
 

@@ -1,6 +1,12 @@
-@include('navbar')
+@extends('layouts.app')
 
-<h1>Tambah Data Pegawai</h1>
+@section('content')
+<div class="container">
+    <div class="row justify-content-center ">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-dark text-light">{{ __('Edit Pegawai') }}</div>
+                
 
 <div class="mt-5 ml-5 col-5 m-auto">
     <form action="/pegawai/{{$pegawai->id}}" method="POST" >
@@ -43,3 +49,4 @@
         </div>
     </form>
 </div>
+@endsection
