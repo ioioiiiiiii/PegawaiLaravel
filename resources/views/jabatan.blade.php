@@ -1,11 +1,19 @@
 @extends('layouts.app')
+<<<<<<< HEAD
 @include('navbar')
+=======
+
+>>>>>>> 038f74b5e74885086438f130f739bfb6931f764f
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+<<<<<<< HEAD
                 <div class="card-header bg-dark text-light">{{ __('Management Jabatan') }}</div>
+=======
+                <div class="card-header bg-dark text-light">{{ __('Dashboard') }}</div>
+>>>>>>> 038f74b5e74885086438f130f739bfb6931f764f
 
                 <div class="card-body">
                     <div class="my-1">
@@ -16,7 +24,11 @@
     <div class="alert alert-success" role="alert">
         {{Session::get('message')}}
     </div>
+<<<<<<< HEAD
 @endif
+=======
+@endif  
+>>>>>>> 038f74b5e74885086438f130f739bfb6931f764f
 <table class="table">
     <thead>
         <tr>
@@ -50,4 +62,8 @@
     </tbody>
 </table>
             </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 038f74b5e74885086438f130f739bfb6931f764f

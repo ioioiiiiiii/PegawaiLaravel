@@ -1,18 +1,16 @@
-@include('navbar')
+@extends('layouts.app')
 
-<h1>Tambah Data Pegawai</h1>
+@section('content')
+<div class="container">
+    <div class="row justify-content-center ">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-dark text-light">{{ __('Tambah Perusahaan  ') }}</div>
+                <div class="m-5">
 
-@if($errors->any())
-<div class="alert alert-danger">
-    <ul>
-        @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
 
-<div class="mt-5 ml-5 col-5">
+
+<div class=" ml-5 col-5 m-auto">
     <form action="pegawai" method="post">
         @csrf
         <div class="mb-3">
@@ -48,7 +46,17 @@
         </div>
         
         <div class="mb-3">
-            <button class="btn btn-success" type="submit">Simpan</button>
+            <button class="btn btn-success " type="submit">Simpan</button>
         </div>
+        @if($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
     </form>
 </div>
+@endsection
