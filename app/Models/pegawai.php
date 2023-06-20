@@ -28,7 +28,7 @@ class pegawai extends Model
     }
     public function userr()
     {
-        return $this->hasOne(userr::class,'id','id_pegawai');
+        return $this->hasOne(User::class,'id','id_pegawai');
     }
 
     public function tugas()

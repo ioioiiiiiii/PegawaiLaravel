@@ -19,24 +19,37 @@ use App\Http\Controllers\userrController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::middleware(['auth'])->group(function(){
-    Route::get('/jabatan',[jabatanController::class,'index']);
-
+    Route::get('/', function () {
+    return view('/home');
+});
     Route::get('/pegawai',[pegawaiController::class,'index']);
     Route::get('/pegawai-add',[pegawaiController::class,'create']);
     Route::post('/pegawai',[pegawaiController::class,'store']);
     Route::get('/pegawai-edit/{id}',[pegawaiController::class,'edit']);
     Route::put('/pegawai/{id}',[pegawaiController::class, 'update']);
     Route::delete('/pegawai/{id}',[pegawaiController::class,'destroy']);
+    
+    Route::get('/jabatan',[jabatanController::class,'index']);
+    Route::get('/jabatan-add',[jabatanController::class,'create']);
+    Route::post('/jabatan',[jabatanController::class,'store']);
+    Route::get('/jabatan-edit/{id}',[jabatanController::class,'edit']);
+    Route::put('/jabatan/{id}',[jabatanController::class,'update']);
+    Route::delete('/jabatan/{id}',[jabatanController::class,'destroy']);
+
+
 
     Route::get('/tugas',[tugasController::class,'index']);
 
     Route::get('/perusahaan',[perusahaanController::class,'index']);
-
+    Route::get('/perusahaan-add',[perusahaanController::class,'create']);
+    Route::post('/perusahaan',[perusahaanController::class,'store']);
+    Route::get('/perusahaan-edit/{id}',[perusahaanController::class,'edit']);
+    Route::put('/perusahaan/{id}',[perusahaanController::class,'update']);
+    Route::delete('/perusahaan/{id}',[perusahaanController::class,'destroy']);
+    
     Route::get('/user',[userrController::class,'index']);
 });
 

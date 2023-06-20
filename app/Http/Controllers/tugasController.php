@@ -12,4 +12,5 @@ class tugasController extends Controller
         $tugas = tugas::with('pegawai')->get();
         return view('tugas',['listtugas' => $tugas]);
     }
+    
 }

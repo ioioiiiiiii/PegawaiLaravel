@@ -49,3 +49,4 @@
   </div>
 </nav></body>
 </html>
+<?php /**PATH C:\personal\Code\PegawaiLarapel\resources\views/navbar.blade.php ENDPATH**/ ?>
