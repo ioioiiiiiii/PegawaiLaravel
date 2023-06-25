@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @extends('layouts.app')
 
 @section('content')
@@ -42,6 +41,3 @@
     </form>
 </div>
 @endsection
-=======
-
->>>>>>> c6801037bfd22ed36ca6ab117830bb56836e2034

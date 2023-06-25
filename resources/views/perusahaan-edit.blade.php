@@ -5,7 +5,7 @@
     <div class="row justify-content-center ">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header bg-dark text-light">{{ __('Tambah Perusahaan  ') }}</div>
+                <div class="card-header bg-dark text-light">{{ __('Edit Perusahaan  ') }}</div>
                 <div class="m-5">
                     <form action="/perusahaan/{{$perusahaan->id}}" method="post">
                     @method('PUT')
