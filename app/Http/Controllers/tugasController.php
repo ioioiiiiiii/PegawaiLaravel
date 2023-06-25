@@ -14,6 +14,7 @@ class tugasController extends Controller
         $tugas = tugas::with('pegawai')->get();
         return view('tugas',['listtugas' => $tugas]);
     }
+<<<<<<< HEAD
 
     public function create(){
         $pegawai = pegawai::all();
@@ -67,4 +68,7 @@ class tugasController extends Controller
         return redirect('/tugas');
     }
 
+=======
+    
+>>>>>>> c6801037bfd22ed36ca6ab117830bb56836e2034
 }

@@ -1,4 +1,14 @@
 @extends('layouts.app')
+<<<<<<< HEAD
+@include('navbar')
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg bg-dark text-white">{{ __('Management Perusahaan') }}</div>
+
+=======
 
 @section('content')
 <div class="container">
@@ -7,6 +17,7 @@
             <div class="card">
                 <div class="card-header bg bg-dark text-white">{{ __('Dashboard') }}</div>
 
+>>>>>>> 038f74b5e74885086438f130f739bfb6931f764f
                 <div class="card-body">
                     <div class="my-3">
     <a href="perusahaan-add" class= "btn btn-dark ml-5">Add Data</a>
@@ -25,7 +36,11 @@
             <th>Nama</th>
             <th>Daftar Pegawai</th>
             <th>Action</th>
+<<<<<<< HEAD
+
+=======
             
+>>>>>>> 038f74b5e74885086438f130f739bfb6931f764f
         </tr>
     </thead>
     <tbody>
