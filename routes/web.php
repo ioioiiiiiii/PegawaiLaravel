@@ -42,6 +42,11 @@ Route::middleware(['auth'])->group(function(){
 
 
     Route::get('/tugas',[tugasController::class,'index']);
+    Route::get('/tugas-add',[tugasController::class,'create']);
+    Route::post('/tugas',[tugasController::class,'store']);
+    Route::get('/tugas-edit/{id}',[tugasController::class,'edit']);
+    Route::put('/tugas/{id}',[tugasController::class,'update']);
+    Route::delete('/tugas/{id}',[tugasController::class,'destroy']);
 
     Route::get('/perusahaan',[perusahaanController::class,'index']);
     Route::get('/perusahaan-add',[perusahaanController::class,'create']);
